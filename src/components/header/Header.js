@@ -4,22 +4,23 @@ import './Header.css';
 import {Navbar, Nav, NavDropdown} from "react-bootstrap";
 import {LanguageManager} from "../../managers/LanguageManager";
 
-class Header extends React.Component{
+class Header extends React.Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
         LanguageManager.getInstance().subscribeToLang(this)
     }
 
-    switchLang(){
+    switchLang() {
         LanguageManager.getInstance().switchLanguage();
     }
 
-    render(){
+    render() {
         return (
             <div className="Header">
                 <Navbar bg="white" expand="sm">
-                    <Navbar.Brand href="#home"> <img src={process.env.PUBLIC_URL + '/logo192.png'} alt="ejoi2020"/>
+                    <Navbar.Brand href="#home">
+                        <img src={process.env.PUBLIC_URL + '/logo192.png'} alt="ejoi2020"/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="NavbarContainer">

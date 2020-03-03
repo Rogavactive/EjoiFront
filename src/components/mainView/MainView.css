@@ -1,12 +1,27 @@
 .MainView img{
     z-index: -99;
+    filter: blur(1px);
+    animation: blur-image 1300ms linear;
+    position: absolute;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+@keyframes blur-image {
+    0%{
+        filter: blur(0);
+    }
+    100%{
+        filter: blur(1px);
+    }
 }
 
 .MainView{
     overflow: hidden;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     max-height: 100vh;
 }
 
@@ -26,12 +41,18 @@
     border: solid #aaa 1px;
     padding: 10px 20px;
     border-radius: 5px;
+    font-family: "Roboto", serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #424242;
+    text-transform: uppercase;
     transition: ease-in-out 200ms;
 }
 
 .MainViewContent button:hover{
     box-shadow: black 0 0 5px;
     background: #ddd;
+    color: #000000;
     transition: ease-in-out 200ms;
 }
 

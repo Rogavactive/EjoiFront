@@ -12,6 +12,7 @@
     "react-bootstrap-icons": "^1.0.0-alpha2",
     "react-dom": "^16.13.0",
     "react-flags": "^0.1.18",
+    "react-on-screen": "^2.1.1",
     "react-scripts": "3.4.0"
   },
   "scripts": {

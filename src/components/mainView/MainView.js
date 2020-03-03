@@ -3,7 +3,6 @@ import './MainView.css';
 
 import * as Icon from 'react-bootstrap-icons';
 import {LanguageManager} from "../../managers/LanguageManager";
-import {NavDropdown} from "react-bootstrap";
 
 
 class MainView extends React.Component{
