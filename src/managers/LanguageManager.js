@@ -3,6 +3,7 @@ import React from 'react';
 export class LanguageManager {
 
     static myInstance = null;
+    _subscribers = [];
 
     static getInstance() {
         if (LanguageManager.myInstance == null) {
@@ -39,6 +40,10 @@ export class LanguageManager {
         return this.lang
     }
 
+    subscribeToLang(obj){
+        this._subscribers.push(obj)
+    }
+
     switchLanguage() {
         if (this.lang === 'ka') {
             this.lang = 'en';
@@ -47,7 +52,9 @@ export class LanguageManager {
             this.lang = 'ka';
             this.icon = '/GB.png';
         }
-        console.log(this.lang)
+        for(let obj of this._subscribers){
+            obj.forceUpdate()
+        }
     }
 
     getText(key) {

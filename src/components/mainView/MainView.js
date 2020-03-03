@@ -11,6 +11,7 @@ class MainView extends React.Component{
         super(props);
         this.state = {transform: 'translateY(0px)' };
         this.onChange = this.onChange.bind(this);
+        LanguageManager.getInstance().subscribeToLang(this);
     }
 
     componentDidMount() {
