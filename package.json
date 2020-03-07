@@ -8,28 +8,21 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
-<<<<<<< HEAD
-    "emotion": "^10.0.27",
-=======
     "bootstrap": "^4.4.1",
->>>>>>> 205a20f893def73c05e1df1674ff28f47f562c27
+    "emotion": "^10.0.27",
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0-beta.17",
     "react-bootstrap-icons": "^1.0.0-alpha2",
     "react-dom": "^16.13.0",
-<<<<<<< HEAD
     "react-html-parser": "^2.0.2",
     "react-id-swiper": "^3.0.0",
     "react-native-image-slider": "^2.0.3",
     "react-native-image-slider-show": "^1.0.3",
     "react-scripts": "3.4.0",
     "react-spinners": "^0.8.0",
-    "swiper": "^5.3.6"
-=======
+    "swiper": "^5.3.6",
     "react-flags": "^0.1.18",
-    "react-on-screen": "^2.1.1",
-    "react-scripts": "3.4.0"
->>>>>>> 205a20f893def73c05e1df1674ff28f47f562c27
+    "react-on-screen": "^2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
