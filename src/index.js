@@ -1,7 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Gallery from './components/gallery/Gallery'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
