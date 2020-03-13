@@ -3,7 +3,7 @@ import './MainView.css';
 
 import * as Icon from 'react-bootstrap-icons';
 import {LanguageManager} from "../../managers/LanguageManager";
-
+import { ModalManager } from '../../managers/ModalManager';
 
 class MainView extends React.Component{
     constructor(props) {
@@ -32,7 +32,7 @@ class MainView extends React.Component{
             <div className="MainView">
                 <img style={this.state} src={process.env.PUBLIC_URL + '/home-bg.jpg' }/>
                 <div className="MainViewContent">
-                    <button onClick={this.showAlert}> <Icon.DocumentText className="DocumentIcon" size="30px"/>
+                    <button onClick={ ()=> ModalManager.getInstance().clickRegister()}> <Icon.DocumentText className="DocumentIcon" size="30px"/>
                         {LanguageManager.getInstance().getText('common.register')}
                     </button>
                 </div>
@@ -41,6 +41,8 @@ class MainView extends React.Component{
     }
 
     showAlert() {
+        //()=> Sample.openModal()
+        
         alert("Im an alert");
     }
 }

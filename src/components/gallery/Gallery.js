@@ -24,6 +24,8 @@ import 'swiper/css/swiper.css';
       }
     }
     return (
+      <div className = "logo-container2">
+        <div className="main-text">You Can Visit</div>
       <Swiper {...params}>
        < div className="logo-container">
          <div className="logo">
@@ -32,15 +34,17 @@ import 'swiper/css/swiper.css';
          </div>
 
         </div>
-      
-        <div>
+        < div className="logo-container">
+        <div className="logo">
         <img src={'https://frontendmasters.com/static-assets/learn/og-learning-path-react.jpg'} alt="cur" class="center"
         />
-        </div>
-        <div> <img src={'https://i.udemycdn.com/course/240x135/1411694_0862.jpg'} alt="cur" class="center"
-        /></div>
-        <div><img src='http://placehold.it/400x20&text=slide1'  class="img-responsive"/><span>Hello </span></div>
-      </Swiper>
+        </div> </div>
+        < div className="logo-container">
+        <div className="logo">
+        <img src={'https://i.udemycdn.com/course/240x135/1411694_0862.jpg'} alt="cur" class="center"
+        />
+        </div> </div>
+      </Swiper> </div> 
     )
   };
   export default Autoplay;

@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
+    "@react-google-maps/api": "^1.8.5",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
@@ -14,15 +15,17 @@
     "react-bootstrap": "^1.0.0-beta.17",
     "react-bootstrap-icons": "^1.0.0-alpha2",
     "react-dom": "^16.13.0",
+    "react-flags": "^0.1.18",
     "react-html-parser": "^2.0.2",
     "react-id-swiper": "^3.0.0",
+    "react-modal-login": "^1.4.5",
     "react-native-image-slider": "^2.0.3",
     "react-native-image-slider-show": "^1.0.3",
+    "react-on-screen": "^2.1.1",
     "react-scripts": "3.4.0",
+    "react-social-login": "^3.4.6",
     "react-spinners": "^0.8.0",
-    "swiper": "^5.3.6",
-    "react-flags": "^0.1.18",
-    "react-on-screen": "^2.1.1"
+    "swiper": "^5.3.6"
   },
   "scripts": {
     "start": "react-scripts start",
