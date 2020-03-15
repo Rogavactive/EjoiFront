@@ -25,6 +25,7 @@
     "react-scripts": "3.4.0",
     "react-social-login": "^3.4.6",
     "react-spinners": "^0.8.0",
+    "react-visibility-sensor": "^5.1.1",
     "swiper": "^5.3.6"
   },
   "scripts": {
@@ -47,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3"
   }
 }

@@ -32,9 +32,9 @@ class MainView extends React.Component{
             <div className="MainView">
                 <img style={this.state} src={process.env.PUBLIC_URL + '/home-bg.jpg' }/>
                 <div className="MainViewContent">
-                    <button> <Icon.DocumentText className="DocumentIcon" size="30px"/>
-                        {LanguageManager.getInstance().getText('common.register')}
-                    </button>
+                    {/*<button onClick={ ()=> ModalManager.getInstance().clickRegister()}> <Icon.DocumentText className="DocumentIcon" size="30px"/>*/}
+                    {/*    {LanguageManager.getInstance().getText('common.register')}*/}
+                    {/*</button>*/}
                 </div>
             </div>
         );

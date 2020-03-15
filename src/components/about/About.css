@@ -1,5 +1,5 @@
 .About{
-    height: 100vh;
+    height: fit-content;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -25,12 +25,29 @@
     text-align: left;
 }
 
-.about-invisible{
+.invisible{
     visibility: hidden;
 }
-.about-visible{
+
+.slide-up-visible{
     visibility: visible;
     animation: appear-animation 1000ms ease-in-out;
+}
+
+.left-to-right-visible{
+    visibility: visible;
+    animation: slide-in-animation 500ms ease-in-out;
+}
+
+@keyframes slide-in-animation {
+    0%{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @keyframes appear-animation {
@@ -51,6 +68,18 @@
     .about-content{
         width: 65%;
         text-align: center;
+    }
+    .invisible{
+        visibility: visible !important;
+    }
+    .slide-up-visible{
+        visibility: visible;
+        animation: none;
+    }
+
+    .left-to-right-visible{
+        visibility: visible;
+        animation: none;
     }
 }
 

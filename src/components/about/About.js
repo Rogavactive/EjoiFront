@@ -3,15 +3,35 @@ import './About.css';
 import {LanguageManager} from "../../managers/LanguageManager";
 import TrackVisibility from 'react-on-screen';
 
-const ComponentToTrack = ({isVisible}) => {
+class AboutContent extends React.Component {
+    render() {
+        if (this.props.isVisible) {
+            this.class_name = "slide-up-visible";
+        }
+        return (<div className={this.class_name}>{LanguageManager.getInstance().getText('about.text')}</div>)
+    };
 
-    var class_name = "about-invisible";
-
-    if(isVisible){
-        class_name = "about-visible";
+    constructor(props) {
+        super(props);
+        this.class_name = "invisible";
     }
-    return (<div className={class_name}>{LanguageManager.getInstance().getText('about.text')}</div>);
-};
+
+}
+
+class AboutHeader extends React.Component {
+    render() {
+        if (this.props.isVisible) {
+            this.class_name = "left-to-right-visible";
+        }
+        return (<img className={this.class_name} src={process.env.PUBLIC_URL + '/logo192.png'} alt="ejoi2020"/>)
+    };
+
+    constructor(props) {
+        super(props);
+        this.class_name = "invisible";
+    }
+
+}
 
 class About extends React.Component {
 
@@ -23,11 +43,11 @@ class About extends React.Component {
     render() {
         return (
             <div className="About">
-                <div className="about-header">
-                    <img src={process.env.PUBLIC_URL + '/logo192.png'} alt="ejoi2020"/>
-                </div>
-                <TrackVisibility once className="about-content" >
-                    <ComponentToTrack/>
+                <TrackVisibility once className="about-header">
+                    <AboutHeader/>
+                </TrackVisibility>
+                <TrackVisibility once className="about-content">
+                    <AboutContent/>
                 </TrackVisibility>
             </div>
         );
