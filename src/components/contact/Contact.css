@@ -1,0 +1,36 @@
+
+.Contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+.Contact-about{
+    background-color: red;
+    height: 100%;
+    width: 50%;
+}
+.Contact-map {
+    background-color: rosybrown;
+    height: 100%;
+    width: 50%;
+}
+
+@media (max-width:1000px){
+    .Contact {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .Contact-map {
+        height: 400px;
+        width: 100%;
+    }
+
+    .Contact-about {
+        height: 400px;
+        width: 100%;
+    }
+}
