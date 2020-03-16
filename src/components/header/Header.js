@@ -3,6 +3,7 @@ import './Header.css';
 
 import {Navbar, Nav, NavDropdown} from "react-bootstrap";
 import {LanguageManager} from "../../managers/LanguageManager";
+import {ModalManager} from "../../managers/ModalManager";
 
 class Header extends React.Component {
 
@@ -36,14 +37,14 @@ class Header extends React.Component {
                                     {LanguageManager.getInstance().getText('tournament.location')}
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider/>
-                                <NavDropdown.Item href="#action/3.4">
-                                    {LanguageManager.getInstance().getText('common.register')}
+                                <NavDropdown.Item onClick={ () => ModalManager.getInstance().clickRegister()}>
+                                        {LanguageManager.getInstance().getText('common.register')}
                                 </NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link href="#home">
                                 {LanguageManager.getInstance().getText('common.about.tbilisi')}
                             </Nav.Link>
-                            <Nav.Link href="#link">
+                            <Nav.Link onClick={ () => ModalManager.getInstance().clickRegister()}>
                                 {LanguageManager.getInstance().getText('common.register')}
                             </Nav.Link>
                         </Nav>

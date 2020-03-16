@@ -5,8 +5,8 @@ import Header from "./components/header/Header";
 import MainView from "./components/mainView/MainView";
 import About from "./components/about/About";
 import Schedule from "./components/schedule/Schedule";
-// import Sample from './components/register/Register';
-// import Contact from './components/contact/Contact';
+import Register from './components/register/Register';
+import Contact from './components/contact/Contact';
 
 class App extends React.Component{
 
@@ -23,7 +23,7 @@ class App extends React.Component{
                 <Schedule/>
                 {/*<Gallery/>*/}
                 {/*<Contact/>*/}
-                {/*<Sample/>*/}
+                <Register/>
                 
             </div>
         );

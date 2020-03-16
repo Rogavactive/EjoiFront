@@ -60,13 +60,16 @@ class ScheduleDate extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {isSmall: false}
+        if (window.screen.width >= 1000) {
+            this.state = {isSmall: false};
+        } else {
+            this.state = {isSmall: true};
+        }
         this.adjustToWidth();
         let thisClass = this;
-        thisClass.adjustToWidth();
         window.addEventListener('resize', () => {
             thisClass.adjustToWidth()
-        })
+        });
     }
 
     adjustToWidth() {
@@ -87,7 +90,6 @@ class ScheduleDate extends React.Component {
     }
 
     render() {
-        console.log(this.state.isSmall, this.class_name)
         return (!this.state.isSmall ?
             <TrackVisibility once className="schedule-item">
                 <DateBubble date={this.props.date} month={this.props.month}/>

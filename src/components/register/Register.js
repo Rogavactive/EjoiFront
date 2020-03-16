@@ -4,7 +4,7 @@ import { ModalManager } from "../../managers/ModalManager";
  
 // import { facebookConfig, googleConfig } from "social-config";
 // import { FacebookButton, FacebookCount } from "react-social";
-class Sample extends React.Component {
+class Register extends React.Component {
   constructor(props) {
     super(props);
     ModalManager.getInstance().subscribeModal(this);
@@ -96,7 +96,7 @@ class Sample extends React.Component {
     );
   }
 }
-export default Sample;
+export default Register;
 
 const facebook = {
     appId: "YOUR FB APP ID GOES HERE",
@@ -105,12 +105,12 @@ const facebook = {
     version: "v3.2",
     scope: "email"
   };
-   
+
   export const facebookConfig = facebook;
 
   const google = {
     client_id: "YOUR_CLIENT_ID.apps.googleusercontent.com",
     scope: "profile email"
   };
-   
+
   export const googleConfig = google;
