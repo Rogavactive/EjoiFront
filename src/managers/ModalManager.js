@@ -14,8 +14,7 @@ export class ModalManager {
 
 
     subscribeModal(obj) {
-        this._modalClass = obj
-        console.log(obj)
+        this._modalClass = obj;
     }
 
     clickRegister(){

@@ -5,7 +5,7 @@
     width: 100%;
     box-shadow: #aaa 0 1px 1px;
     font-weight: 600;
-    z-index: 1;
+    z-index: 100;
 }
 
 nav {

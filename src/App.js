@@ -21,7 +21,7 @@ class App extends React.Component{
                 <MainView/>
                 <About/>
                 <Schedule/>
-                {/*<Gallery/>*/}
+                <Gallery/>
                 {/*<Contact/>*/}
                 <Register/>
                 

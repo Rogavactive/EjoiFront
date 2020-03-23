@@ -5,14 +5,6 @@ export class LanguageManager {
     static myInstance = null;
     _subscribers = [];
 
-    static getInstance() {
-        if (LanguageManager.myInstance == null) {
-            LanguageManager.myInstance = new LanguageManager();
-        }
-
-        return this.myInstance;
-    }
-
     constructor() {
         this.lang = 'en';
         this.icon = '/GE.png';
@@ -53,11 +45,25 @@ export class LanguageManager {
                     '                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\n' +
                     '                        culpa qui officia deserunt mollit anim id est laborum.'
             },
-            'month.february' : {
-                'ka':'თებერვალი',
-                'en':'February'
+            'month.february': {
+                'ka': 'თებერვალი',
+                'en': 'February'
+            }, 'gallery.text.dummy': {
+                'ka': 'მეტეხი',
+                'en': 'Metexi'
+            }, 'gallery.text.header': {
+                'ka': 'თბილისის ღირსშესანიშნაობები',
+                'en': 'Places you can visit'
             }
         }
+    }
+
+    static getInstance() {
+        if (LanguageManager.myInstance == null) {
+            LanguageManager.myInstance = new LanguageManager();
+        }
+
+        return this.myInstance;
     }
 
     getLang() {
